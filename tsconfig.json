@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "lib": ["es2023"],
+    "lib": ["es2023", "dom", "dom.iterable"],
     "moduleDetection": "force",
     "module": "nodenext",
     "moduleResolution": "nodenext",
     "resolveJsonModule": true,
-    "types": ["node"],
+    "jsx": "react-jsx",
+    "types": ["node", "vitest/globals", "@testing-library/jest-dom"],
     "strict": true,
     "noUnusedLocals": true,
     "declaration": true,

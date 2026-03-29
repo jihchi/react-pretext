@@ -1,11 +1,14 @@
-import { defineConfig } from "vite-plus";
+import { defineConfig } from 'vite-plus';
 
 export default defineConfig({
   pack: {
-    dts: {
-      tsgo: true,
-    },
+    dts: true,
     exports: true,
+    sourcemap: true,
+    format: ['esm', 'cjs'],
+    deps: {
+      neverBundle: ['react', 'react-dom', '@chenglou/pretext'],
+    },
   },
   lint: {
     options: {
@@ -13,5 +16,13 @@ export default defineConfig({
       typeCheck: true,
     },
   },
-  fmt: {},
+  fmt: {
+    singleQuote: true,
+    semi: true,
+    sortPackageJson: true,
+  },
+  test: {
+    globals: true,
+    setupFiles: ['./tests/setup.ts'],
+  },
 });

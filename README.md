@@ -1,6 +1,12 @@
-# vite-plus-starter
+# react-pretext
 
-A starter for creating a Vite Plus project.
+React component for [`@chenglou/pretext`](https://github.com/chenglou/pretext) -- fast, accurate multiline text measurement without DOM reflow.
+
+## Getting Started
+
+```sh
+npm add react-pretext
+```
 
 ## Development
 

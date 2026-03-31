@@ -1,25 +1,28 @@
 {
-  "name": "react-pretext",
+  "name": "@jihchi/react-pretext",
   "version": "0.0.2",
   "description": "React component for `@chenglou/pretext` -- fast, accurate multiline text measurement without DOM reflow",
   "homepage": "https://github.com/jihchi/react-pretext#readme",
   "bugs": {
     "url": "https://github.com/jihchi/react-pretext/issues"
   },
+  "license": "MIT",
+  "author": "jihchi <achi@987.tw>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jihchi/react-pretext.git"
   },
-  "license": "MIT",
-  "author": "jihchi <achi@987.tw>",
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "exports": {
     ".": "./dist/index.mjs",
     "./package.json": "./package.json"
   },
-  "files": [
-    "dist"
-  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "vp pack",
     "check": "vp check",
@@ -40,9 +43,6 @@
     "@chenglou/pretext": "^0.0.3"
   },
   "packageManager": "pnpm@10.33.0",
-  "publishConfig": {
-    "access": "public"
-  },
   "pnpm": {
     "overrides": {
       "vite": "npm:@voidzero-dev/vite-plus-core@latest",

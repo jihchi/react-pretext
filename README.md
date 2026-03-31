@@ -5,7 +5,7 @@ React component for [`@chenglou/pretext`](https://github.com/chenglou/pretext) -
 ## Getting Started
 
 ```sh
-npm add react-pretext
+npm add @jihchi/react-pretext
 ```
 
 ## Development
